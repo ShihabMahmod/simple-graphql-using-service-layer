@@ -7,7 +7,6 @@ In this setup, GraphQL acts as a flexible query language and API layer, allowing
 
 - Service Layer: Contains all core business logic and data processing. It receives requests from the GraphQL resolvers, processes any required logic, and interacts with the database or other services. This approach keeps GraphQL resolvers lightweight and focused on data transfer, while the service layer manages validation, error handling, and business rules.
 
-- Database Layer: Responsible for CRUD operations. By keeping this logic in the service layer, we allow GraphQL to remain simple and focused solely on data query/mutation requests.
 
 # Benefits of this Approach:
 
