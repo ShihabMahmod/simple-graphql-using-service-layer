@@ -1,5 +1,5 @@
 
-# GraphQL E-Com CRUD System
+# GraphQL E-Com CRUD System(GraphQL Layer + Service Layer)
 
 In this setup, GraphQL acts as a flexible query language and API layer, allowing clients to specify exactly what data they need. The service layer sits between GraphQL and the database, handling business logic and data retrieval. This structure provides clear separation of concerns
 
