@@ -1,10 +1,20 @@
 
 # GraphQL E-Com CRUD System
 
-A simple E-com CRUD System built with Laravel and GraphQL using Lighthouse. This system allows users to browse products, manage categories and brands, and perform CRUD operations on products, categories, and brands via GraphQL queries and mutations.
+In this setup, GraphQL acts as a flexible query language and API layer, allowing clients to specify exactly what data they need. The service layer sits between GraphQL and the database, handling business logic and data retrieval. This structure provides clear separation of concerns
 
+- GraphQL Layer: Manages query and mutation definitions, receiving requests and passing them to the service layer. The GraphQL schema acts as the contract for how clients interact with data.
 
+- Service Layer: Contains all core business logic and data processing. It receives requests from the GraphQL resolvers, processes any required logic, and interacts with the database or other services. This approach keeps GraphQL resolvers lightweight and focused on data transfer, while the service layer manages validation, error handling, and business rules.
 
+- Database Layer: Responsible for CRUD operations. By keeping this logic in the service layer, we allow GraphQL to remain simple and focused solely on data query/mutation requests.
+
+# Benefits of this Approach:
+
+- Modularity: Clear separation of GraphQL schema and business logic.
+- Scalability: Service layer can grow with complex logic without changing GraphQL code.
+- Reusability: Service layer functions can be reused by other parts of the application.
+- This architecture is ideal for maintaining a clean, maintainable, and scalable GraphQL API.
 
 ## Table of Contents Feature
 
